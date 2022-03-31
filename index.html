@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>!!UPDATE!!</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
-<style>
 
-/*
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>!!UPDATE!!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        /*
 TODO:
 -font?
 -change title
@@ -23,102 +23,102 @@ TODO:
 -make parallax work
 -fix nav bar (color, font size?, include logo, include imgs, etc.)
 */
-
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-}
-
-p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: x-large;
-}
-
-body {
-    background-color: rgba(219, 185, 162, 0.3);
-}
-
-.parallax {
-    background-image: linear-gradient(to bottom, rgba(102, 153, 153, 0.52), rgba(153, 153, 102, 0.73)), url(images/pexels-pixabay-236151.jpg);
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-}
-</style>
+        
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+        }
+        
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: x-large;
+        }
+        
+        body {
+            background-color: rgba(219, 185, 162, 0.3);
+        }
+        
+        .parallax {
+            background-image: linear-gradient(to bottom, rgba(102, 153, 153, 0.52), rgba(153, 153, 102, 0.73)), url(images/pexels-pixabay-236151.jpg);
+            max-height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .container-fluid img {
+            width: 100%;
+        }
+        
+        @media only screen and (max-device-width: 1366px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-          <ul class="nav navbar-tabs">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-          </ul>
-          <ul class="nav navbar-tabs navbar-right">
-            <li><a href="#">Reviews</a></li>
-          </ul>
+            <ul class="nav navbar-tabs">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+            <ul class="nav navbar-tabs navbar-right">
+                <li><a href="#">Reviews</a></li>
+            </ul>
         </div>
-      </nav>
-    <div class="parallax"></div>
-    <img src="images/pexels-pixabay-236151.jpg" class="img-fluid" alt="loneliness">
+    </nav>
+    <div class="parallax">
+        <img src="images/pexels-pixabay-236151.jpg" class="img-fluid" alt="loneliness">
+    </div>
     <div class="container mt-4">
         <div class="row m-5">
             <h1>Do you feel lonely?</h1>
-            <p>Do you deal with feelings of loneliness and isolation on a regular basis? 
-                There’s no reason to be embarrassed cause as for human it's normal to feel lonely. What is LONELINESS? 
-                Loneliness is a state of mind, which causes people to feel empty, alone and unwanted.</p>
+            <p>Do you deal with feelings of loneliness and isolation on a regular basis? There’s no reason to be embarrassed cause as for human it's normal to feel lonely. What is LONELINESS? Loneliness is a state of mind, which causes people to feel empty,
+                alone and unwanted.</p>
         </div>
         <div class="row m-5">
             <h1>Why Meditation?</h1>
-            <p>Loneliness is of no good. It is important to find a solution for our own physical and mental well-being. 
-                Meditation can make us aware that we are all connected and helps us realize that no matter how much we 
-                feel separated from others, our lives are connected in some way or another -  the lesson of togetherness. 
-                Meditate and get to know what your emotions are communicating to you.</p>
+            <p>Loneliness is of no good. It is important to find a solution for our own physical and mental well-being. Meditation can make us aware that we are all connected and helps us realize that no matter how much we feel separated from others, our
+                lives are connected in some way or another - the lesson of togetherness. Meditate and get to know what your emotions are communicating to you.</p>
         </div>
     </div>
     <div class="container-fluid p-5 mt-5">
         <div class="row p-5 m-5">
             <div class="col-md-1"></div>
-            <div class="col-md-3">
+            <div class="col-md-5">
                 <img src="images/Online meditation.jpeg" class="img-fluid" alt="online meditation">
-                <h1>UPDATE THESE IMGs<br>(too small)<br>~2x the size</h1>
+                <h1>Images low quality</h1>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-5">
                 <h1>Online meditation</h1>
-                <p>In our digital world, doing everything online has never been easier. 
-                    Take a look at some possible online session which take your mind off your lonesomeness.</p>
+                <p>In our digital world, doing everything online has never been easier. Take a look at some possible online session which take your mind off your lonesomeness.</p>
             </div>
             <div class="col-md-1"></div>
         </div>
         <div class="row p-5 m-5">
             <div class="col-md-1"></div>
-            <div class="col-md-7">
+            <div class="col-md-5">
                 <h1>Group meditation</h1>
-                <p>If you prefer to get in touch with other people who may also struggle with being lonely, 
-                    then take a look at a few options where you can take part in a in-person session either outdoor or indoor. </p>
+                <p>If you prefer to get in touch with other people who may also struggle with being lonely, then take a look at a few options where you can take part in a in-person session either outdoor or indoor. </p>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-5">
                 <img src="images/Group meditation.jpeg" class="img-fluid" alt="group meditation">
             </div>
             <div class="col-md-1"></div>
         </div>
         <div class="row p-5 m-5">
             <div class="col-md-1"></div>
-            <div class="col-md-3">
+            <div class="col-md-5" style="margin-top: 50px;">
                 <img src="images/meditation coaching.jpeg" class="img-fluid" alt="meditation coaching">
             </div>
-            <div class="col-md-7">
+            <div class="col-md-5">
                 <h1>Meditation coaching</h1>
-                <p>If you want to go one step further to cope or even understand your loneliness, then take a look at 
-                    possible meditation or life coaches, who can help you in implementing different techniques in 
-                    your everyday life in order to fully accept yourself and acknowledge your struggles. </p>
+                <p>If you want to go one step further to cope or even understand your loneliness, then take a look at possible meditation or life coaches, who can help you in implementing different techniques in your everyday life in order to fully accept
+                    yourself and acknowledge your struggles. </p>
             </div>
             <div class="col-md-1"></div>
         </div>
@@ -128,4 +128,5 @@ body {
         test
     </footer>
 </body>
+
 </html>
