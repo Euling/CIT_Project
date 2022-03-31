@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lorem impsum</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    /*
+    * TODO:
+    * - check responsiveness -> make font-size smaller for small screens
+    * - logo in next row -> fix later
+    * - other TODOs in code
+    */
+    .solid-green{
+        padding: 5px;
+        margin: 5px;
+        font-size: 12px;
+        background: #D6E9C4;
+        border: 1px solid #000000;
+        border-radius: 7px; 
+    }
+    .solid-orange{
+        padding: 5px;
+        margin: 5px;
+        font-size: 12px;
+        background: #EEC778;
+        border: 1px solid #000000;
+        border-radius: 7px;
+    }
+    .fading-green{
+        padding: 25px;
+        /*margin: 15px;*/
+        font-size: 14px;
+        text-align: center;
+        background: linear-gradient(to bottom right,rgba(214,233,196,0.4),rgba(255,255,255,0.4)); 
+        /*border: 1px solid #000000;*/
+        /*border-radius:7px;*/
+    }
+    .fading-orange{
+        padding: 5px;
+        margin: 15px;
+        font-size: 14px;
+        background: linear-gradient(to bottom right,rgba(238,199,120,0.4),rgba(255,255,255,0.4)); 
+        /*border: 1px solid #000000;*/
+        /*border-radius: 7px;*/
+    }
+    .review{
+        padding: 10px;
+        border: 1px solid #000000;
+    }
+
+    #rating_bar {
+        width: 100px;
+        height: 100px;
+        /*margin: 4px 175px !important;*/
+        display: inline-block;
+        display: inline;
+        unicode-bidi: bidi-override;
+        direction: rtl;
+
+    }
+
+    #rating_bar>span:before {
+        content: '☆';
+        color: #c7c5c5;
+        height: 100px;
+        width: 100px;
+        cursor: pointer;
+        font-size: 3em;
+    }
+
+    #rating_bar>span:hover:before,
+    #rating_bar span:hover~span:before {
+        color: #EEC778;
+    }
+
+
+    
+    .article{
+        margin: 10px;
+        padding: 10px;
+        /*TODO*/
+    }
+    .links{
+        position: relative;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 10px #000000;
+    }
+    .text-top{
+        position: absolute;
+        top: 8px;
+        left: 40%
+    }
+    .text-bottom{
+        position: absolute;
+        bottom: 8px;
+        left: 40%
+    }
+</style>
+</head>
+<body>
+    <!--top nav bar-->
+    <div class="container-fluid mt-1">
+        <div class="row">
+            <div class="col-md-"></div>
+        </div>
+    </div>
+    <!--intro-->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="fading-green">
+                    <h3>Looking for ways to cope with loneliness?</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
+                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna 
+                        aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
+                        duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                        sanctus est Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <!--img check responsiveness-->
+                <img class="img-responsive" src="images/logo_placeholder.png" alt="Logo">
+            </div>
+        </div>
+    </div>
+    <!--body-->
+    <div class="container mt-4">
+        <div class="row">
+            <!--links and review-->
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="meditation.html">
+                            <div class="links">
+                                <img class="img-responsive" src="images/meditation.jpeg" alt="meditation">
+                                <div class="text-top">Meditation</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="group_activities.html">
+                            <div class="links">
+                                <img class="img-responsive" src="images/group activity.jpeg" alt="group activities">
+                                <div class="text-bottom">Group acitivities</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="consulting.html">
+                            <div class="links">
+                                <img class="img-responsive" src="images/consulting.jpg" alt="therapy">
+                                <div class="text-top">Consulting</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-5 pt-5">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4" align="center">
+                        <div class="review">Leave a review</div>
+                        <div id="rating_bar">
+                            <span id="rate_1"></span>
+                            <span id="rate_2"></span>
+                            <span id="rate_3"></span>
+                            <span id="rate_4"></span>
+                            <span id="rate_5"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>    
+            </div>
+            <!--articles and blogposts-->
+            <div class="col-md-2">
+                <div class="fading-orange">
+                    <div class="article">
+                        <a href="test.html" target="blank">Some article</a>
+                    </div>
+                    <div class="article">
+                        <a href="test.html" target="blank">Some article</a>
+                    </div>
+                    <div class="article">
+                        <a href="test.html" target="blank">Some article</a>
+                    </div>
+                    <div class="article">
+                        <a href="test.html" target="blank">Some article</a>
+                    </div>
+                    <div class="article">
+                        <a href="test.html" target="blank">Some article</a>
+                    </div>
+                    <div class="article">
+                        <a href="test.html" target="blank">Some article</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
