@@ -1,1 +1,183 @@
-<p>Group activities</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online & Group Meditation</title>
+
+    <!--Copied from index page-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <style>
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+        }
+        
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+        
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: x-large;
+        }
+        
+        ul {
+            font-family: 'Montserrat', sans-serif;
+            font-size: large;
+            font-style: italic;
+            margin-top: 2%;
+        }
+        
+        ul b {
+            color: #ce9524;
+        }
+        
+        body {
+            background-color: rgba(219, 185, 162, 0.3);
+        }
+        
+        .parallax {
+            height: 500px;
+            max-height: 700px;
+            display: block;
+            position: relative;
+        }
+        
+        .parallax img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            position: absolute;
+            transition: 1s;
+        }
+        
+        .parallax img:hover {
+            opacity: 60%;
+        }
+        
+        .parallax img:hover~.main-text {
+            display: block;
+        }
+        
+        .main-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: xx-large;
+            font-style: italic;
+            text-align: center;
+            padding: 10% 15%;
+            position: absolute;
+            display: none;
+        }
+        
+        .list-title {
+            line-height: 120%;
+            padding-top: 5%;
+        }
+        
+        .content p {
+            align-items: center;
+            padding-top: 5%;
+        }
+        
+        .row img {
+            width: 200px;
+            height: 200px;
+            margin-top: 2%;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Change class names?-->
+    <div class="parallax">
+        <img src="../images/groupmeditation-2.jpg" class="img-fluid" alt="group meditation">
+        <p class="main-text">Meditation in itself is a personal journey that reflects on clearing your mind and focusing on each breath.</p>
+    </div>
+    <p style="font-weight: 800; font-size: 20px; color: red;">There is a problem wiht the main image hover </p>
+    <div class="container mt-4">
+        <p>Meditation is such a personal, singular thing to do that it might be strange to think of it as a group activity. Although group meditation provides an opportunity to counteract some of negative effects of our paradoxically connected and lonesome
+            experiences. When practicing meditation within a group setting, you’re able to feed off the energy of the group. As a way of sharing meaningful space with others, it touches us in ways that most other activities cannot. Some of these benefits
+            include:
+        </p>
+        <!--List-->
+        <ul>
+            <li>Group meditation can help with <b>habit formation.</b></li>
+            <li>Meditating with others <b>creates a sense of connectedness.</b></li>
+            <li>Group settings provide opportunity for <b>sharing our experience and feedback.</b></li>
+            <li><b>Broadens our understanding</b> of how we can share space. </li>
+            <li>Group meditation is an amazing opportunity to <b>meet new people.</b></li>
+        </ul>
+        <!--Content-->
+        <!--NO RESPONSIVE!!!!!-->
+        <!--ADD LINKS TO THE IMAGES!!-->
+        <div class="content">
+            <div class="row m-5">
+                <div class="col-7">
+                    <h1 class="list-title">To help you start with a group meditation we found the best websites for you:</h1>
+                </div>
+                <div class="col-5">
+                    <img src="../images/online-meditation-home.jpg" class="img-fluid" alt="online meditation">
+                </div>
+            </div>
+            <div class="row m-5">
+                <div class="col-4">
+                    <h2>Insight Timer</h2>
+                    <img src="../images/insight-timer.webp" class="img-fluid" alt="insigth timer">
+                </div>
+                <div class="col-8">
+                    <p>The app’s Circles feature is a great way to connect with others — you can chat and meditate live with groups of friends, colleagues, or strangers. You can also find curated playlists with themes like releasing guilt, practicing compassion,
+                        and anxiety relief. </p>
+                </div>
+
+            </div>
+            <div class="row m-5">
+                <div class="col-8">
+                    <p>Headspace is well-known for its expansive library of guided meditations and natural soundscapes, but its “Move Mode” makes it a standout among the rest. Get your blood flowing with workouts and mental fitness exercises inspired by
+                        professional athletes. Add your friends or work colleagues to the buddies feature and have the option of letting them see your progress.</p>
+                </div>
+                <div class="col-4">
+                    <h2>Headspace</h2>
+                    <img src="../images/headspace.jpeg" class="img-fluid" alt="headspace">
+                </div>
+            </div>
+            <div class="row m-5">
+                <div class="col-4">
+                    <h2>Mindful Leader</h2>
+                    <img src="../images/mindful-leader.png" class="img-fluid" alt="mindful-leader">
+                </div>
+                <div class="col-8">
+                    <p>Mindful Leader is online meditation sessions that are 30 minutes long, split into two halves. Classes are held using the zoom and are held every hour on each day. The first half is silent time for meditation and the second half is
+                        for reflection & sharing. They offer training, curate and convene events, learning communities and educational resources to inspire, develop, and enable people.</p>
+                </div>
+            </div>
+            <div class="row m-5">
+                <div class="col-8">
+                    <p>Smiling Mind develops evidence-based meditation and mindfulness exercises for both kids and adults, with the goal of alleviating stress and improving focus at work and in the classroom. Their meditation programs are suitable for schools
+                        and education. Smiling Mind acts to help reduce emotional reactivity and behavioural issues in school-aged kids. </p>
+                </div>
+                <div class="col-4">
+                    <h2>Smiling Mind</h2>
+                    <img src="../images/smiling-mind.jpg" class="img-fluid" alt="smiling-mind">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
