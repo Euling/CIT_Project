@@ -22,6 +22,17 @@ TODO:
 -include footer
 -make parallax work
 -fix nav bar (color, font size?, include logo, include imgs, etc.)
+
+---
+
+-NUKE parallax stuff
+-put css in file and import via link
+-change fluid container with empty col 1 to normal container? (without empty col)
+-include imgs for navbar? (looks nice and clean now though...)
+-COMMENTS
+-sources for imgs?
+-change imgs -> pexels.com! (should be same format (e.g., 16:9) and somewhat big for better resolution)
+-auto write email when clicking on email in footer (maybe same with tel.number)
 */
         
         h1 {
@@ -31,13 +42,33 @@ TODO:
         
         p {
             font-family: 'Montserrat', sans-serif;
-            font-size: x-large;
+            font-size: large;
         }
         
         body {
             background-color: rgba(219, 185, 162, 0.3);
+            overflow-x: hidden;
         }
-        
+
+
+        .element-right {
+            opacity: 0;
+            transform: translateX(50%);
+            transition: all 350ms ease-in;
+        }
+
+        .element-left {
+            opacity: 0;
+            transform: translateX(-50%);
+            transition: all 350ms ease-in;
+        }
+
+        .element-right.appear,
+        .element-left.appear {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
         .parallax {
             background-image: linear-gradient(to bottom, rgba(102, 153, 153, 0.52), rgba(153, 153, 102, 0.73)), url(images/pexels-pixabay-236151.jpg);
             max-height: 100%;
@@ -60,15 +91,29 @@ TODO:
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <ul class="nav navbar-tabs">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-            </ul>
-            <ul class="nav navbar-tabs navbar-right">
-                <li><a href="#">Reviews</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-md navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-brand">!!! UPDATE !!!</div>
+            <button class="navbar-toggle" data-toggle="collapse" data-target =".naveHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse naveHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Meditation</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Online meditation</a></li>
+                            <li><a href="#">Group meditation</a></li>
+                            <li><a href="#">Meditation coaching</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="parallax">
@@ -89,11 +134,11 @@ TODO:
     <div class="container-fluid p-5 mt-5">
         <div class="row p-5 m-5">
             <div class="col-md-1"></div>
-            <div class="col-md-5">
+            <div class="col-md-5 element-left">
                 <img src="images/Online meditation.jpeg" class="img-fluid" alt="online meditation">
                 <h1>Images low quality</h1>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 p-5 element-right">
                 <h1>Online meditation</h1>
                 <p>In our digital world, doing everything online has never been easier. Take a look at some possible online session which take your mind off your lonesomeness.</p>
             </div>
@@ -101,21 +146,21 @@ TODO:
         </div>
         <div class="row p-5 m-5">
             <div class="col-md-1"></div>
-            <div class="col-md-5">
+            <div class="col-md-5 p-5 element-left">
                 <h1>Group meditation</h1>
                 <p>If you prefer to get in touch with other people who may also struggle with being lonely, then take a look at a few options where you can take part in a in-person session either outdoor or indoor. </p>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 element-right">
                 <img src="images/Group meditation.jpeg" class="img-fluid" alt="group meditation">
             </div>
             <div class="col-md-1"></div>
         </div>
         <div class="row p-5 m-5">
             <div class="col-md-1"></div>
-            <div class="col-md-5" style="margin-top: 50px;">
+            <div class="col-md-5 element-left" style="margin-top: 50px;">
                 <img src="images/meditation coaching.jpeg" class="img-fluid" alt="meditation coaching">
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 p-5 element-right">
                 <h1>Meditation coaching</h1>
                 <p>If you want to go one step further to cope or even understand your loneliness, then take a look at possible meditation or life coaches, who can help you in implementing different techniques in your everyday life in order to fully accept
                     yourself and acknowledge your struggles. </p>
@@ -124,9 +169,28 @@ TODO:
         </div>
     </div>
     <div class="parallax"></div>
-    <footer>
-        test
+    <footer class="text-light" style="background-color: #222;">
+        <div class="container mt-3 p-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Address</h1>
+                    <p>Company name<br>
+                        Our Street 1<br>
+                        1010 Vienna</p>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h1>Contact us</h1>
+                    <p>ourmail@companyname.com<br>
+                    +43 123 45 67 890</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-light p-3" style="background-color: black;">
+            © 2022 Copyright:
+            <a class="text-light" href="#">Company name</a></div>
     </footer>
+    <script src="/script.js"></script>    
 </body>
 
 </html>
