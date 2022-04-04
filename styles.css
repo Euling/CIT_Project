@@ -1,0 +1,37 @@
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+body {
+    background-color: rgba(219, 185, 162, 0.3);
+    overflow-x: hidden;
+}
+
+
+.element-right {
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all 350ms ease-in;
+}
+
+.element-left {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 350ms ease-in;
+}
+
+.element-right.appear,
+.element-left.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.container img {
+    width: 100%;
+}

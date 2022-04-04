@@ -14,83 +14,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
         /*
 TODO:
--font?
+
 -change title
--include footer
--make parallax work
--fix nav bar (color, font size?, include logo, include imgs, etc.)
-
----
-
--NUKE parallax stuff
--put css in file and import via link
--change fluid container with empty col 1 to normal container? (without empty col)
+-put css in file and import via link AND DELETE <style> HERE <- check, still need to delete this here
 -include imgs for navbar? (looks nice and clean now though...)
--COMMENTS
 -sources for imgs?
 -change imgs -> pexels.com! (should be same format (e.g., 16:9) and somewhat big for better resolution)
 -auto write email when clicking on email in footer (maybe same with tel.number)
 */
         
-        h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-        }
+
         
-        p {
-            font-family: 'Montserrat', sans-serif;
-            font-size: large;
-        }
-        
-        body {
-            background-color: rgba(219, 185, 162, 0.3);
-            overflow-x: hidden;
-        }
 
-
-        .element-right {
-            opacity: 0;
-            transform: translateX(50%);
-            transition: all 350ms ease-in;
-        }
-
-        .element-left {
-            opacity: 0;
-            transform: translateX(-50%);
-            transition: all 350ms ease-in;
-        }
-
-        .element-right.appear,
-        .element-left.appear {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        .parallax {
-            background-image: linear-gradient(to bottom, rgba(102, 153, 153, 0.52), rgba(153, 153, 102, 0.73)), url(images/pexels-pixabay-236151.jpg);
-            max-height: 100%;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        .container-fluid img {
-            width: 100%;
-        }
-        
-        @media only screen and (max-device-width: 1366px) {
-            .parallax {
-                background-attachment: scroll;
-            }
-        }
     </style>
 </head>
 
 <body>
+    <!--navbar-->
     <nav class="navbar navbar-expand-md navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-brand">!!! UPDATE !!!</div>
@@ -116,59 +60,57 @@ TODO:
             </div>
         </div>
     </nav>
-    <div class="parallax">
-        <img src="images/pexels-pixabay-236151.jpg" class="img-fluid" alt="loneliness">
-    </div>
+
+    <!--opening img-->
+    <img src="images/pexels-pixabay-236151.jpg" class="img-fluid" alt="loneliness">
+
+    <!--initial definitions-->
     <div class="container mt-4">
-        <div class="row m-5">
+        <div class="row m-5 element-left">
             <h1>Do you feel lonely?</h1>
             <p>Do you deal with feelings of loneliness and isolation on a regular basis? There’s no reason to be embarrassed cause as for human it's normal to feel lonely. What is LONELINESS? Loneliness is a state of mind, which causes people to feel empty,
                 alone and unwanted.</p>
         </div>
-        <div class="row m-5">
+        <div class="row m-5 element-right">
             <h1>Why Meditation?</h1>
             <p>Loneliness is of no good. It is important to find a solution for our own physical and mental well-being. Meditation can make us aware that we are all connected and helps us realize that no matter how much we feel separated from others, our
                 lives are connected in some way or another - the lesson of togetherness. Meditate and get to know what your emotions are communicating to you.</p>
         </div>
     </div>
-    <div class="container-fluid p-5 mt-5">
+    <!--offerings-->
+    <div class="container p-5 mt-5">
         <div class="row p-5 m-5">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 element-left">
+            <div class="col-md-6 element-left">
                 <a href="first_draft/group_activities.html"><img src="images/Online meditation.jpeg" class="img-fluid" alt="online meditation"></a>
                 <h1>Images low quality <br> online & group are the same page NOW!!</h1>
             </div>
-            <div class="col-md-5 p-5 element-right">
+            <div class="col-md-6 p-5 element-right">
                 <h1>Online meditation</h1>
                 <p>In our digital world, doing everything online has never been easier. Take a look at some possible online session which take your mind off your lonesomeness.</p>
             </div>
-            <div class="col-md-1"></div>
         </div>
         <div class="row p-5 m-5">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 p-5 element-left">
+            <div class="col-md-6 p-5 element-left">
                 <h1>Group meditation</h1>
                 <p>If you prefer to get in touch with other people who may also struggle with being lonely, then take a look at a few options where you can take part in a in-person session either outdoor or indoor. </p>
             </div>
-            <div class="col-md-5 element-right">
+            <div class="col-md-6 element-right">
                 <img src="images/Group meditation.jpeg" class="img-fluid" alt="group meditation">
             </div>
-            <div class="col-md-1"></div>
         </div>
         <div class="row p-5 m-5">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 element-left" style="margin-top: 50px;">
+            <div class="col-md-6 element-left" style="margin-top: 50px;">
                 <a href="first_draft/consulting.html"><img src="images/meditation coaching.jpeg" class="img-fluid" alt="meditation coaching"></a>
             </div>
-            <div class="col-md-5 p-5 element-right">
+            <div class="col-md-6 p-5 element-right">
                 <h1>Meditation coaching</h1>
                 <p>If you want to go one step further to cope or even understand your loneliness, then take a look at possible meditation or life coaches, who can help you in implementing different techniques in your everyday life in order to fully accept
                     yourself and acknowledge your struggles. </p>
             </div>
-            <div class="col-md-1"></div>
         </div>
     </div>
-    <div class="parallax"></div>
+
+    <!--footer-->
     <footer class="text-light" style="background-color: #222;">
         <div class="container mt-3 p-5">
             <div class="row">
