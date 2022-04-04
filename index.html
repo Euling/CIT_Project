@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>!!UPDATE!!</title>
+    <title>Lonelitate</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -26,10 +26,6 @@ TODO:
 -auto write email when clicking on email in footer (maybe same with tel.number)
 -include anchors for offerings
 */
-        
-
-        
-
     </style>
 </head>
 
@@ -37,22 +33,25 @@ TODO:
     <!--navbar-->
     <nav class="navbar navbar-expand-md navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="navbar-brand">!!! UPDATE !!!</div>
-            <button class="navbar-toggle" data-toggle="collapse" data-target =".naveHeaderCollapse">
+            <a href="index.html">
+                <div class="navbar-brand">LONELITATE</div>
+            </a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".naveHeaderCollapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
             <div class="collapse navbar-collapse naveHeaderCollapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About us</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Meditation</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Online meditation</a></li>
-                            <li><a href="#">Group meditation</a></li>
-                            <li><a href="#">Meditation coaching</a></li>
+                            <li><a href="meditation.html">What is meditation?</a></li>
+                            <li><a href="online_meditation.html">Online meditation</a></li>
+                            <li><a href="group_meditation.html">Group meditation</a></li>
+                            <li><a href="coaching.html">Meditation coaching</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Reviews</a></li>
@@ -75,6 +74,12 @@ TODO:
             <h1>Why Meditation?</h1>
             <p>Loneliness is of no good. It is important to find a solution for our own physical and mental well-being. Meditation can make us aware that we are all connected and helps us realize that no matter how much we feel separated from others, our
                 lives are connected in some way or another - the lesson of togetherness. Meditate and get to know what your emotions are communicating to you.</p>
+        </div>
+        <div class="row m-5 element-left">
+            <h1>What is meditation?</h1>
+            <p>Meditation can be defined as a set of techniques that are intended to <b>encourage a heightened state of awareness and focused attention</b>. Meditation is also a <b>consciousness-changing technique</b> that has been shown to have a wide number
+                of benefits on psychological well-being. Meditation isn’t about becoming a different person, a new person, or even a better person. It’s about training in awareness and getting a healthy sense of perspective. You’re not trying to turn
+                off your thoughts or feelings. You’re learning to observe them without judgment. And eventually, you may start to better understand them as well. </p>
         </div>
     </div>
     <!--offerings-->
@@ -116,23 +121,23 @@ TODO:
             <div class="row">
                 <div class="col-md-4">
                     <h1>Address</h1>
-                    <p>Company name<br>
-                        Our Street 1<br>
-                        1010 Vienna</p>
+                    <p>Lonelitate<br> Our Street 1<br> 1010 Vienna</p>
                 </div>
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
                     <h1>Contact us</h1>
-                    <p>ourmail@companyname.com<br>
-                    +43 123 45 67 890</p>
+                    <a href="mailto:ourmail@lonelitate.com?subject=Mail from our Website">
+                        <p style="color: #fff;">ourmail@lonelitate.com</p>
+                    </a>
+                    <a href="tel:+431234567890">
+                        <p style="color: #fff;">+43 123 45 67 890</p>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="text-center text-light p-3" style="background-color: black;">
             © 2022 Copyright:
-            <a class="text-light" href="#">Company name</a></div>
+            <a class="text-light" href="#">Lonelitate</a></div>
     </footer>
-    <script src="/script.js"></script>    
+    <script src="script.js"></script>
 </body>
-
-</html>

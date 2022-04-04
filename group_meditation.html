@@ -104,6 +104,35 @@
 </head>
 
 <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <a href="index.html">
+                <div class="navbar-brand">LONELITATE</div>
+            </a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".naveHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse naveHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Meditation</a>
+                        <ul class="dropdown-menu active">
+                            <li><a href="meditation.html">What is meditation?</a></li>
+                            <li><a href="online_meditation.html">Online meditation</a></li>
+                            <li class="active"><a href="group_meditation.html">Group meditation</a></li>
+                            <li><a href="coaching.html">Meditation coaching</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!--Change class names?-->
     <div class="parallax">
         <img src="/images/groupmeditation-2.jpg" class="img-fluid" alt="group meditation">
@@ -178,5 +207,30 @@
         </div>
     </div>
 </body>
+<!--footer-->
+<footer class="text-light" style="background-color: #222;">
+    <div class="container mt-3 p-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h1>Address</h1>
+                <p>Lonelitate<br> Our Street 1<br> 1010 Vienna</p>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h1>Contact us</h1>
+                <a href="mailto:ourmail@lonelitate.com?subject=Mail from our Website">
+                    <p style="color: #fff;">ourmail@lonelitate.com</p>
+                </a>
+                <a href="tel:+431234567890">
+                    <p style="color: #fff;">+43 123 45 67 890</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center text-light p-3" style="background-color: black;">
+        © 2022 Copyright:
+        <a class="text-light" href="#">Lonelitate</a></div>
+</footer>
+<script src="script.js"></script>
 
 </html>
